@@ -47,7 +47,6 @@ public abstract class HiveTestUtils {
     final Table table = client.getTable(db, name);
     Assert.assertTrue("Table should be external db:" + db + " table:" + table,
         !MetaStoreUtils.isExternalTable(table) &&
-        !MetaStoreUtils.isIndexTable(table) &&
         TableType.MANAGED_TABLE.toString().equals(table.getTableType()));
   }
 }
