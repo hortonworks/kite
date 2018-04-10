@@ -180,7 +180,7 @@ public class TestCreateDatasetCommandCluster extends MiniDFSTest {
         writer = users.newWriter();
         writer.write(new User("test", "test@example.com"));
       } finally {
-        Closeables.closeQuietly(writer);
+        Closeables.close(writer, true);
       }
 
       // remove the dataset's metadata
