@@ -18,7 +18,7 @@
   <parent>
     <groupId>org.kitesdk</groupId>
     <artifactId>kite-morphlines</artifactId>
-    <version>1.1.1-SNAPSHOT</version>
+    <version>1.0.0.3.0.0.0-1548</version>
   </parent>
 
   <artifactId>kite-morphlines-hadoop-core</artifactId>
