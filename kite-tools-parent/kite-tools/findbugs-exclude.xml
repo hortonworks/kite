@@ -17,4 +17,24 @@
   <Match>
     <Package name="~org.kitesdk.cli.commands.tarimport.avro.*" />
   </Match>
+  <Match>
+    <Class name="org.kitesdk.cli.Main" />
+    <Method name="getVersion" />
+    <Bug pattern="NP_GUARANTEED_DEREF_ON_EXCEPTION_PATH" />
+  </Match>
+  <Match>
+    <Class name="org.kitesdk.cli.commands.UpdateDatasetCommand" />
+    <Method name="run" />
+    <Bug pattern="NP_NONNULL_PARAM_VIOLATION" />
+  </Match>
+  <Match>
+    <Class name="org.kitesdk.cli.commands.ShowRecordsCommand" />
+    <Method name="run" />
+    <Bug pattern="NP_NULL_PARAM_DEREF" />
+  </Match>
+  <Match>
+    <Class name="org.kitesdk.tools.TransformTask" />
+    <Method name="run" />
+    <Bug pattern="NP_NONNULL_PARAM_VIOLATION" />
+  </Match>
 </FindBugsFilter>
